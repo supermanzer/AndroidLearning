@@ -103,6 +103,8 @@ class MainActivity : AppCompatActivity() {
         currentIndex = (currentIndex + increment) % questionBank.size
         updateQuestion()
     }
+    // TODO: Use data binding in string resources to put % right in single Toast message
+    // https://stackoverflow.com/questions/52280085/concat-a-localized-string-and-a-dynamic-string-using-databinding-in-kotlin-xml
     private fun checkAnswer(userAnswer: Boolean, view: View) {
         val correctAnswer = questionBank[currentIndex].answer
         var messageResId = 0
