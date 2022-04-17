@@ -1,2 +1,6 @@
 # Ignoring some stuff, not others
 AndroidNerdRanch.pdf
+
+# IDE files/directories
+.idea/
+.vscode/
