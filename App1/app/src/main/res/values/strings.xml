@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">BNR App1</string>
+    <string name="app_name">BNR App 1</string>
     <string name="question_text">Ryan is hungry</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">You got it right, aren\'t you smart!</string>
     <string name="incorrect_toast">Wrong, your Geography teacher failed you</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong</string>
     <string name="next_button">Next</string>
     <string name="prev_button">Prev</string>
     <string name="question_australia">Canberra is the capital of Australia.</string>
