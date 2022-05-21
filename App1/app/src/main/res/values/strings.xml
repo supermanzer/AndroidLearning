@@ -3,8 +3,8 @@
     <string name="question_text">Ryan is hungry</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="correct_toast">You got it right, aren\'t you smart!</string>
-    <string name="incorrect_toast">Wrong, your Geography teacher failed you</string>
+    <string name="correct_toast">You got it right, aren\'t you smart! %1$d out of %2$d correct</string>
+    <string name="incorrect_toast">Wrong, your Geography teacher failed you. %1$d out of %2$d correct</string>
     <string name="warning_text">Are you sure you want to do this?</string>
     <string name="show_answer_button">Show Answer</string>
     <string name="cheat_button">Cheat!</string>
@@ -21,4 +21,5 @@
  in the Americas.</string>
     <string name="question_asia">Lake Baikal is the world\'s oldest and deepest
  freshwater lake.</string>
+    <string name="api_level">Current API Level %1$d</string>
 </resources>

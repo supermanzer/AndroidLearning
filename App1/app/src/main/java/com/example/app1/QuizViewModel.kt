@@ -3,6 +3,7 @@ package com.example.app1
 import androidx.lifecycle.ViewModel
 
 private const val TAG = "QuizViewModel"
+private const val MAX_CHEATS = 3
 
 class QuizViewModel : ViewModel() {
     private val questionBank = listOf(
@@ -16,6 +17,8 @@ class QuizViewModel : ViewModel() {
     var currentIndex = 0
     var totalScore = 0
     var isCheater = false
+    var totalCheats = 0
+
 
     val currentQuestionAnswer: Boolean
         get() = questionBank[currentIndex].answer
@@ -33,9 +36,17 @@ class QuizViewModel : ViewModel() {
         currentIndex = (currentIndex + increment) % questionBank.size
     }
     fun incrementScore(isCorrect: Boolean) {
-        if (isCorrect) {
+        if (isCorrect && !tooMuchCheater) {
             totalScore += 1
         }
     }
 
+    val tooMuchCheater: Boolean
+        get() = totalCheats > MAX_CHEATS
+
+    fun incrementCheat(didCheat: Boolean) {
+        if (didCheat) {
+            totalCheats += 1
+        }
+    }
 }
