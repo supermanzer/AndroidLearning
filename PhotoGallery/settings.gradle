@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Criminal Intent"
+rootProject.name = "PhotoGallery"
 include ':app'
